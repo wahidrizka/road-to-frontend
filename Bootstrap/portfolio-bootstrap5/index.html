@@ -59,7 +59,7 @@
     <!-- Navbar end -->
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center pb-3">
+    <section class="jumbotron text-center">
       <img
         src="img/oxobmaru-avatar.png"
         alt="Oxobmaru"
@@ -68,11 +68,28 @@
       />
       <h1 class="display-4">Oxobmaru</h1>
       <p class="lead">Web Designer | System Administrator</p>
+      <svg
+        width="100%"
+        height="100%"
+        id="svg"
+        viewBox="0 0 1440 400"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 123.14832535885165,191.04306220095694 246.2966507177033,182.08612440191388 325,192 C 403.7033492822967,201.91387559808612 437.9617224880384,230.69856459330146 530,225 C 622.0382775119616,219.30143540669854 771.8564593301436,179.1196172248804 886,173 C 1000.1435406698564,166.8803827751196 1078.6124401913876,194.82296650717703 1165,205 C 1251.3875598086124,215.17703349282297 1345.6937799043062,207.58851674641147 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="#ffffff"
+          fill-opacity="1"
+          class="transition-all duration-300 ease-in-out delay-150 path-0"
+        ></path>
+      </svg>
     </section>
     <!-- Jumbotron end -->
 
     <!-- About -->
-    <section id="about" class="pb-3">
+    <section id="about">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -96,11 +113,28 @@
           </div>
         </div>
       </div>
+      <svg
+        width="100%"
+        height="100%"
+        id="svg"
+        viewBox="0 0 1440 400"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 64.74641148325358,209.4736842105263 129.49282296650716,218.94736842105263 236,230 C 342.50717703349284,241.05263157894737 490.77511961722473,253.68421052631578 603,241 C 715.2248803827753,228.31578947368422 791.4066985645934,190.31578947368422 889,186 C 986.5933014354066,181.68421052631578 1105.598086124402,211.05263157894737 1201,219 C 1296.401913875598,226.94736842105263 1368.200956937799,213.4736842105263 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="#e2edff"
+          fill-opacity="1"
+          class="transition-all duration-300 ease-in-out delay-150 path-0"
+        ></path>
+      </svg>
     </section>
     <!-- About End -->
 
     <!-- Projects -->
-    <section id="projects" class="pb-3">
+    <section id="projects">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -185,11 +219,28 @@
           </div>
         </div>
       </div>
+      <svg
+        width="100%"
+        height="100%"
+        id="svg"
+        viewBox="0 0 1440 400"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 115.08133971291866,194.73684210526315 230.16267942583733,189.4736842105263 333,209 C 435.8373205741627,228.5263157894737 526.4306220095693,272.8421052631579 603,252 C 679.5693779904307,231.15789473684208 742.1148325358854,145.1578947368421 847,140 C 951.8851674641146,134.8421052631579 1099.11004784689,210.5263157894737 1205,234 C 1310.88995215311,257.4736842105263 1375.4449760765551,228.73684210526315 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="#ffffff"
+          fill-opacity="1"
+          class="transition-all duration-300 ease-in-out delay-150 path-0"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir Projects -->
 
     <!-- Contact -->
-    <section id="contact" class="pb-3">
+    <section id="contact">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -198,7 +249,19 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <div
+              class="d-none alert alert-success alert-dismissible fade show my-alert"
+              role="alert"
+            >
+              <strong>Thankyou!</strong> We have received your message.
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form name="oxobmaru-contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
                 <input
@@ -206,6 +269,7 @@
                   class="form-control"
                   id="name"
                   aria-describedby="name"
+                  name="name"
                 />
               </div>
               <div class="mb-3">
@@ -215,22 +279,59 @@
                   class="form-control"
                   id="email"
                   aria-describedby="email"
+                  name="email"
                 />
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Pesan</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  name="message"
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary btn-send">
+                Send
+              </button>
+              <button
+                class="btn btn-primary btn-loading d-none"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
       </div>
+      <svg
+        width="100%"
+        height="100%"
+        id="svg"
+        viewBox="0 0 1440 400"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 110.87081339712921,183.33971291866027 221.74162679425842,166.67942583732057 318,181 C 414.2583732057416,195.32057416267943 495.9043062200956,240.62200956937804 584,240 C 672.0956937799044,239.37799043062196 766.6411483253589,192.83253588516746 849,192 C 931.3588516746411,191.16746411483254 1001.5311004784689,236.04784688995215 1098,245 C 1194.468899521531,253.95215311004785 1317.2344497607655,226.97607655502392 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="#0d6efd"
+          fill-opacity="1"
+          class="transition-all duration-300 ease-in-out delay-150 path-0"
+        ></path>
+      </svg>
     </section>
     <!-- Contact end -->
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center pb-3 pt-3">
+    <footer class="bg-primary text-white text-center pb-1">
       <p>
         Created with <i class="bi bi-heart-fill text-danger"></i> by
         <a
@@ -247,5 +348,39 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwes_J8mmTEf9PXQIIvwfhbyDRQJ_Fayruz_KMWg7RVJ8RAtC9PmRAz9mAKQbEBXaTc/exec";
+      const form = document.forms["oxobmaru-contact-form"];
+
+      const btnSend = document.querySelector(".btn-send");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // if submit button clicked
+        // display loading button, hide send button
+        btnLoading.classList.toggle("d-none");
+        btnSend.classList.toggle("d-none");
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // display send button, hide loading button
+            btnLoading.classList.toggle("d-none");
+            btnSend.classList.toggle("d-none");
+
+            // display alert
+            myAlert.classList.toggle("d-none");
+
+            // reset form
+            form.reset();
+
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
